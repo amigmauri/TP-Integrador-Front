@@ -1,0 +1,17 @@
+header {
+    width: 100%;
+    background-color: #353A40;
+}
+
+.navbar-brand, .navbar-brand:hover {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.nav-link, .nav-link:hover {
+    color: #aaaaaa;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #ffffff;
+}
