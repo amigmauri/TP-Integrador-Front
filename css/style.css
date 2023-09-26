@@ -15,22 +15,16 @@ header {
 
 
 /* Carrusel */
+.carousel-item {
+    transition: transform 2s ease, opacity .5s ease-out
+}
+
+
 .carousel-item img {
     height: 550px;
-    block-size: cover;
-    animation: fadeIn 3s ease;
+    background-size: cover;
 }
 
-@keyframes fadeIn {
-    0% { 
-        opacity: 0;
-    }
-
-    40% {
-        opacity: 1;
-    }
-
-}
 
 .container-bg-dark {
     background-color: rgba(00, 00, 00, .5);
@@ -39,10 +33,12 @@ header {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 
 .my-caption {
     margin-top: 9rem;
+    margin-right: 2rem;
     color: #ffffff;
 }
 
