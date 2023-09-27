@@ -22,7 +22,7 @@ header {
 
 .carousel-item img {
     height: 550px;
-    background-size: cover;
+    object-fit: cover;
 }
 
 
