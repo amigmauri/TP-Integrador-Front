@@ -16,7 +16,7 @@ header {
 
 /* Carrusel */
 .carousel-item {
-    transition: transform 2s ease, opacity .5s ease-out
+    transition: transform 1s ease, opacity .2s ease-out;
 }
 
 
@@ -36,9 +36,9 @@ header {
     z-index: 2;
 }
 
+
 .my-caption {
     margin-top: 9rem;
-    margin-right: 2rem;
     color: #ffffff;
 }
 
@@ -69,4 +69,18 @@ section {
 
 .hawai h3 {
     padding-top: 1rem;
+}
+
+
+/* seccion conviértete en orador */
+.charla-ignite {
+    border-bottom: 1px dashed;
+}
+
+
+/* footer */
+footer {
+    background-color: #1E4C66;
+    width: 100%;
+    padding: 1.5rem;
 }
