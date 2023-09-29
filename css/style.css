@@ -77,6 +77,10 @@ section {
     border-bottom: 1px dashed;
 }
 
+.btn-full-with {
+    width: 100%;
+}
+
 
 /* footer */
 footer {

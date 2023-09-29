@@ -137,18 +137,30 @@
         </div>
     </section>
 
-    <!-- seccion formulario / conviértete en un orador -->
+    <!-- seccion conviértete en un orador / formulario -->
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-sm-12 text-center">
                     <h2 class="text-center text-uppercase"><span class="h2-span fw-light">conviértete en un</span>orador</h2>
                     <p>Anótate como orador para dar una <span class="charla-ignite">charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
                 </div>
             </div>
-            <div class="row">
-                <!-- formulario -->
-            </div>
+            <form class="row justify-content-center" method="post">
+                <div class="col-md-4 mb-3">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <textarea class="form-control fs-3" id="Textarea" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+                    <p class="text-secondary">Recuerda incluir un título para tu charla</p>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <button type="submit" class="btn-full-with btn btn-lg btn-success mb-5">Enviar</button>
+                </div>
+            </form>
         </div>
     </section>
 
