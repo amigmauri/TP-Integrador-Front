@@ -9,7 +9,7 @@ header {
     color: #ffffff;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
     color: #ffffff;
 }
 
@@ -19,12 +19,10 @@ header {
     transition: transform 1s ease, opacity .2s ease-out;
 }
 
-
 .carousel-item img {
     height: 550px;
     object-fit: cover;
 }
-
 
 .container-bg-dark {
     background-color: rgba(00, 00, 00, .5);
@@ -35,7 +33,6 @@ header {
     left: 0;
     z-index: 2;
 }
-
 
 .my-caption {
     margin-top: 9rem;
@@ -53,31 +50,30 @@ section {
     display: block;
 }
 
+.text-bg-info {
+    color: #ffffff !important;
+}
 
-/* seccion hawai */
-.padding-0 {
+.col-p-0 {
     padding: 0;
 }
 
-.hawai-bg-dark {
+.section-dark {
     background-color: #353A40;
-}
-
-.hawai h3, .hawai p {
     color: #ffffff;
 }
 
-.hawai h3 {
+.section-dark h3 {
     padding-top: 1rem;
 }
 
-
-/* seccion conviértete en orador */
-.charla-ignite {
+.link-dashed, .link-dashed:hover {
+    color: #212529;
+    text-decoration: none;
     border-bottom: 1px dashed;
 }
 
-.btn-full-width {
+.btn-w-100 {
     width: 100%;
 }
 
