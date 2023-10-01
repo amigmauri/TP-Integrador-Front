@@ -40,6 +40,16 @@ header {
 }
 
 
+/* Carrusel secundario */
+.carousel-secondary img {
+    height: auto;
+}
+
+.carousel-secondary .carousel-item {
+    transition: transform .7s ease;
+}
+
+
 /* secciones */
 section {
     margin-top: 1.5rem;
