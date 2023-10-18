@@ -82,6 +82,9 @@ section {
     width: 100%;
 }
 
+.container-max720 {
+    max-width: 720px;
+}
 
 /* footer */
 footer {
