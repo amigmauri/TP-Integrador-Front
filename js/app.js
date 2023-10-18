@@ -29,17 +29,17 @@ function calcularTotal(e) {
     switch (valorCategoria) {
 
         case "1": 
-            valorTotal = valorCantidad * (valorTicket - (valorTicket * 0.8)); //categoria "Estudiante" - descuento del 80%
+            valorTotal = valorCantidad * (valorTicket - (valorTicket * 0.8)); //categoría "Estudiante" - descuento del 80%
             total.textContent = "Total a pagar: $" + valorTotal;
             break;
 
         case "2": 
-            valorTotal = valorCantidad * (valorTicket - (valorTicket * 0.5)); //categoria "Trainee" - descuento del 50%
+            valorTotal = valorCantidad * (valorTicket - (valorTicket * 0.5)); //categoría "Trainee" - descuento del 50%
             total.textContent = "Total a pagar: $" + valorTotal;
             break;
 
         case "3": 
-            valorTotal = valorCantidad * (valorTicket - (valorTicket * 0.15)); //categoria "Junior" - descuento del 15%
+            valorTotal = valorCantidad * (valorTicket - (valorTicket * 0.15)); //categoría "Junior" - descuento del 15%
             total.textContent = "Total a pagar: $" + valorTotal;
             break;
 
@@ -63,6 +63,6 @@ function borrarFormulario(e) {
 }
 
 
-//escucha de evento de cada boton y llamada a su correspondiente función
+//escucha de evento de cada botón y llamada a su correspondiente función
 resumen.addEventListener("click", calcularTotal);
 borrar.addEventListener("click", borrarFormulario);
