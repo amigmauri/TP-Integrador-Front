@@ -63,6 +63,6 @@ function borrarFormulario(e) {
 }
 
 
-//escucha de eventos de los botones
+//escucha de evento de cada boton y llamada a su correspondiente función
 resumen.addEventListener("click", calcularTotal);
 borrar.addEventListener("click", borrarFormulario);
