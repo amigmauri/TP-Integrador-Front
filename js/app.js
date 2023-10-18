@@ -16,8 +16,8 @@ let resumen = document.getElementById("resumen");
 let btnBorrar = document.getElementById("borrar");
 
 
-//cálculo del valor de ticket según cantidad, categoría seleccionada y su correspondiente descuento. 
-//El total se muestra en el campo "Total a pagar: $"
+//cálculo del valor de ticket según cantidad, categoría seleccionada y su correspondiente descuento 
+//el total se muestra en el campo "Total a pagar: $"
 function calcularTotal(e) {
 
     e.preventDefault();
