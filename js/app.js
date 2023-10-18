@@ -16,7 +16,8 @@ let resumen = document.getElementById("resumen");
 let btnBorrar = document.getElementById("borrar");
 
 
-//cálculo del valor de ticket según cantidad y categoría. El total se muestra en el campo "Total a pagar: $"
+//cálculo del valor de ticket según cantidad, categoría seleccionada y su correspondiente descuento. 
+//El total se muestra en el campo "Total a pagar: $"
 function calcularTotal(e) {
 
     e.preventDefault();
@@ -28,17 +29,17 @@ function calcularTotal(e) {
     switch (valorCategoria) {
 
         case "1": 
-            valorTotal = valorCantidad * (valorTicket - (valorTicket * 0.8));
+            valorTotal = valorCantidad * (valorTicket - (valorTicket * 0.8)); //categoria "Estudiante" - descuento del 80%
             total.textContent = "Total a pagar: $" + valorTotal;
             break;
 
         case "2": 
-            valorTotal = valorCantidad * (valorTicket - (valorTicket * 0.5));
+            valorTotal = valorCantidad * (valorTicket - (valorTicket * 0.5)); //categoria "Trainee" - descuento del 50%
             total.textContent = "Total a pagar: $" + valorTotal;
             break;
 
         case "3": 
-            valorTotal = valorCantidad * (valorTicket - (valorTicket * 0.15));
+            valorTotal = valorCantidad * (valorTicket - (valorTicket * 0.15)); //categoria "Junior" - descuento del 15%
             total.textContent = "Total a pagar: $" + valorTotal;
             break;
 
