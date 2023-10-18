@@ -46,6 +46,7 @@ function calcularTotal(e) {
 
 }
 
+
 //reseteo de campos del formulario
 function borrarFormulario(e) {
 
@@ -59,6 +60,7 @@ function borrarFormulario(e) {
     categoria.value = "1";
 
 }
+
 
 //escucha de eventos de los botones
 resumen.addEventListener("click", calcularTotal);
