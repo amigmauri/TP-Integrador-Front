@@ -57,7 +57,7 @@ function borrarFormulario(e) {
     nombre.value = "";
     apellido.value = "";
     correo.value = "";
-    cantidad.value = "";
+    cantidad.value = "1";
     categoria.value = "1";
 
 }
