@@ -1,18 +1,18 @@
 //valor de ticket sin descuento
-const valorTicket = 200;
+const VALOR_TICKET = 200;
 
 //campos del formulario
 let nombre = document.getElementById("nombre");
 let apellido = document.getElementById("apellido");
 let correo = document.getElementById("correo");
-let cant = document.getElementById("cantidad");
+let cantidad = document.getElementById("cantidad");
 let categoria = document.getElementById("categoria");
 
 //campo valor total
 let total = document.getElementById("total");
 
 //botones
-let resumen = document.getElementById("resumen");
+let btnResumen = document.getElementById("resumen");
 let btnBorrar = document.getElementById("borrar");
 
 
@@ -29,17 +29,17 @@ function calcularTotal(e) {
     switch (valorCategoria) {
 
         case "1": 
-            valorTotal = valorCantidad * (valorTicket - (valorTicket * 0.8)); //categoría "Estudiante" - descuento del 80%
+            valorTotal = valorCantidad * (VALOR_TICKET - (VALOR_TICKET * 0.8)); //categoría "Estudiante" - descuento del 80%
             total.textContent = "Total a pagar: $" + valorTotal;
             break;
 
         case "2": 
-            valorTotal = valorCantidad * (valorTicket - (valorTicket * 0.5)); //categoría "Trainee" - descuento del 50%
+            valorTotal = valorCantidad * (VALOR_TICKET - (VALOR_TICKET * 0.5)); //categoría "Trainee" - descuento del 50%
             total.textContent = "Total a pagar: $" + valorTotal;
             break;
 
         case "3": 
-            valorTotal = valorCantidad * (valorTicket - (valorTicket * 0.15)); //categoría "Junior" - descuento del 15%
+            valorTotal = valorCantidad * (VALOR_TICKET - (VALOR_TICKET * 0.15)); //categoría "Junior" - descuento del 15%
             total.textContent = "Total a pagar: $" + valorTotal;
             break;
 
@@ -64,5 +64,5 @@ function borrarFormulario(e) {
 
 
 //escucha de evento de cada botón y llamada a su correspondiente función
-resumen.addEventListener("click", calcularTotal);
-borrar.addEventListener("click", borrarFormulario);
+btnResumen.addEventListener("click", calcularTotal);
+btnBorrar.addEventListener("click", borrarFormulario);
